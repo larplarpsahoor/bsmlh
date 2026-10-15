@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorandus: Beyond The Gates</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="#" class="logo" aria-label="Back to top">
+                    <img src="images/favicon.svg" alt="Zorandus Logo" class="logo-icon-img">
+                    <span>Zorandus</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#trailers">Trailers</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="download-btn" onclick="openPasswordModal()">
+                    Download Demo
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/maxresdefault.jpg" alt="Zorandus Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Zorandus</h1>
+                <div class="hero-subtitle">
+                    <span class="subtitle-line">— BEYOND THE GATES —</span>
+                </div>
+                <div class="hero-description">
+                    <p>Your brother is missing. His last known steps lead into a world sealed away for centuries.</p>
+                    <p>His trail leads beyond the gates — and you will follow.</p>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="openPasswordModal()">
+                        Download Demo
+                    </button>
+                    <button class="btn btn-secondary" onclick="playTrailer()">
+                        Watch Trailer
+                    </button>
+                </div>
+                <div class="hero-status">
+                    Free demo available now • Full release coming soon
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="section-header">
+                <h2>An Epic Adventure Awaits</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="story-content">
+                <div class="story-text">
+                    <div class="story-paragraph">
+                        <p>Step into the magnificent realm of Zorandus, where ancient magic flows through breathtaking landscapes and every corner holds wonders waiting to be discovered.</p>
+                    </div>
+                    <div class="story-paragraph">
+                        <p>When your beloved brother mysteriously disappears, his trail leads to the legendary sealed gates—a threshold between worlds that no one has dared to cross for centuries. But love knows no boundaries, and neither will you.</p>
+                    </div>
+                    <div class="story-paragraph">
+                        <p>Embark on a thrilling journey filled with magical abilities, loyal companions, and breathtaking discoveries. Beyond the gates lies not just mystery, but hope, adventure, and the chance to reunite with those we hold dear.</p>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="images/ss01.jpg" alt="Zorandus Adventure" class="story-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beautiful Moments</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Witness the magic and beauty of Zorandus</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryModal('images/ss02.jpg')">
+                    <img src="images/ss02.jpg" alt="Beautiful Landscapes">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal('images/ss03.jpg')">
+                    <img src="images/ss03.jpg" alt="Magical Adventures">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal('images/ss04.jpg')">
+                    <img src="images/ss04.jpg" alt="Heroic Moments">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal('images/ss05.jpg')">
+                    <img src="images/ss05.jpg" alt="Enchanting Worlds">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal('images/ss06.jpg')">
+                    <img src="images/ss06.jpg" alt="Epic Journey">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal('images/ss07.jpg')">
+                    <img src="images/ss07.jpg" alt="Magical Discovery">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom">&#x2315;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Magical Adventures Await</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Experience the wonders that await beyond the gates</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon fi-combat"></div>
+                    <h3>Heroic Combat</h3>
+                    <p>Master fluid, elegant combat with an arsenal of mystical weapons and magical abilities. Every encounter demands tactics and skill as you fight to protect the realm and the people you love.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-world"></div>
+                    <h3>Enchanting Worlds</h3>
+                    <p>Explore vast, hand-crafted landscapes stretching from sunlit golden meadows to the depths of ancient crystal caves. Every region of Zorandus is teeming with beauty, secrets, and wonders waiting to be uncovered.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-magic"></div>
+                    <h3>Wondrous Magic</h3>
+                    <p>Harness extraordinary spells and grow your magical abilities as you journey further from home. Ancient powers lie dormant, waiting for the right soul to awaken them and bend the world to their will.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-story"></div>
+                    <h3>Heartfelt Story</h3>
+                    <p>At its core, Zorandus tells a deeply human story — one of love, sacrifice, and the lengths we go to for the people who matter most. A narrative that will stay with you long after the credits roll.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-companions"></div>
+                    <h3>Loyal Companions</h3>
+                    <p>You will not walk this path alone. Meet a rich cast of allies, each with their own history and motivations. Build trust with them, and they will stand with you through every hardship the journey throws your way.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon fi-choice"></div>
+                    <h3>Your Unique Path</h3>
+                    <p>Every decision you make leaves a mark on the world of Zorandus. Meaningful choices shape your relationships, your reputation, and the outcome of your quest — making your playthrough genuinely your own.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trailers Section -->
+    <section class="trailers-section" id="trailers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Witness the Journey</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Experience the world of Zorandus in motion</p>
+            </div>
+            <div class="trailer-wrapper">
+                <div class="trailer-container">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" 
+                        title="Zorandus: Beyond The Gates Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Questions Answered</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Everything you need to know about your adventure</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Is the demo available now?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The free demo v1.2.6 is available for download right now. Simply enter your access code above to begin your adventure beyond the gates!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What amazing platforms can I play on?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Zorandus: Beyond The Gates runs beautifully on Windows, Mac, and Linux! The game is optimized to run smoothly on most modern computers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>When can I experience the complete adventure?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The full magical journey will be available in 2026 on Steam and other digital platforms. The wait will be worth it for this epic adventure!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Will my demo progress carry over?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While demo save data won't transfer to the full game, the skills and knowledge you gain will give you a wonderful head start on your complete adventure!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What do I need to run this magical experience?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Minimum:</strong> Windows 7/Mac OS 10.12/Ubuntu 16.04, 2GB RAM, DirectX 9.0c compatible graphics, 500MB free storage space - very accessible!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How much adventure does the demo offer?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The demo provides approximately 1-2 hours of magical gameplay featuring the first three chapters of your brother's trail. Plenty to fall in love with!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-center">
+                    <div class="footer-logo">
+                        <img src="images/favicon.svg" alt="Zorandus Logo" class="logo-icon-img">
+                        <span>Zorandus: Beyond The Gates</span>
+                    </div>
+
+                    <div class="footer-copyright">
+                        <p>© 2026 VALERIA Studios. All rights reserved.</p>
+                        <p>Zorandus: Beyond The Gates™ is a trademark of VALERIA Studios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close" onclick="closeGalleryModal()">&times;</span>
+            <img id="galleryModalImage" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <!-- Password Modal -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content gothimus-modal">
+
+            <!-- Left panel: artwork + branding -->
+            <div class="modal-panel modal-panel-left">
+                <div class="modal-panel-bg"></div>
+                <div class="modal-panel-left-inner">
+                    <div class="modal-brand">
+                        <div class="modal-brand-title">ZORANDUS</div>
+                        <div class="modal-brand-sub">BEYOND THE GATES</div>
+                    </div>
+                    <div class="modal-panel-tagline">
+                        <p>A world sealed for centuries.</p>
+                        <p>Your brother is beyond the gates.</p>
+                        <p>Will you follow?</p>
+                    </div>
+                    <div class="modal-panel-version">Demo v1.2.6 &nbsp;&bull;&nbsp; Free</div>
+                </div>
+            </div>
+
+            <!-- Right panel: form steps -->
+            <div class="modal-panel modal-panel-right">
+                <span class="gothimus-close" onclick="closePasswordModal()">&times;</span>
+
+                <!-- Step 1: Password -->
+                <div id="passwordStep" class="modal-step active">
+                    <div class="step-indicator">01 &nbsp;/&nbsp; DEMO ACCESS</div>
+                    <h2 class="step-title">Your journey starts here.</h2>
+                    <p class="step-description">Enter your demo password to unlock access to the world beyond the gates.</p>
+
+                    <form id="passwordForm">
+                        <label class="form-label">DEMO PASSWORD</label>
+                        <input type="password" id="passwordInput" placeholder="Enter your password" required>
+                        <button type="submit" class="gothimus-btn">Continue</button>
+                    </form>
+
+                    <div class="platform-info">
+                        <div>Windows &mdash; available now</div>
+                        <div>macOS &mdash; coming soon</div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Build selection -->
+                <div id="buildStep" class="modal-step">
+                    <div class="step-indicator">02 &nbsp;/&nbsp; CHOOSE YOUR BUILD</div>
+                    <h2 class="step-title">Choose your build.</h2>
+                    <p class="step-description">One last stop before the gates. Tell us who you are and select your version.</p>
+
+                    <form id="downloadForm">
+                        <label class="form-label">INVITED BY <span class="optional">(optional)</span></label>
+                        <input type="text" id="invitedByInput" placeholder="Who sent you here?">
+
+                        <label class="form-label">YOUR USERNAME</label>
+                        <input type="text" id="usernameInput" placeholder="Enter your username" required>
+
+                        <label class="form-label">SELECT A VERSION</label>
+                        <div class="version-selector">
+                            <div class="version-option recommended selected" data-version="1.2.6">
+                                <div class="version-radio">&#9679;</div>
+                                <div class="version-info">
+                                    <div class="version-title">Latest build <span class="recommended-badge">RECOMMENDED</span></div>
+                                    <div class="version-number">v1.2.6</div>
+                                    <div class="version-desc">Latest updates &amp; fixes</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="gothimus-btn">Download Demo</button>
+                        <div class="back-link" onclick="goBackToPassword()">Back to password entry</div>
+                    </form>
+                </div>
+
+                <div id="errorMessage" class="error-message"></div>
+                <div id="loadingMessage" class="loading-message">Preparing your adventure...</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
